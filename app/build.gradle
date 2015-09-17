@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId 'com.bradzzz.dotdashdot.mytv_stream'
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.squareup.picasso:picasso:2.1.1'
+    compile 'javax.inject:javax.inject:1@jar'
+    compile 'com.squareup.dagger:dagger-compiler:1.1.0'
+    compile 'com.jakewharton:butterknife:4.0.1'
+    compile 'com.squareup.dagger:dagger:1.1.0'
+    compile 'com.github.pedrovgs:renderers:1.0.9'
+    compile 'com.google.android.gms:play-services:4.1.32'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile 'org.apache.httpcomponents:httpcore:4.4.3'
+    compile 'com.github.pedrovgs:draggablepanel:1.8'
+    compile 'com.github.pedrovgs:renderers:2.0.3'
+    compile 'com.jpardogo.materialtabstrip:library:1.1.0'
+}
