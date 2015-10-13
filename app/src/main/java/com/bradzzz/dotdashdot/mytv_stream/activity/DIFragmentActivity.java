@@ -16,8 +16,10 @@
 package com.bradzzz.dotdashdot.mytv_stream.activity;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.bradzzz.dotdashdot.mytv_stream.myTVPanelApplication;
 
 /**
@@ -25,7 +27,7 @@ import com.bradzzz.dotdashdot.mytv_stream.myTVPanelApplication;
  * Activity. This Activity extends from SherlockFragmentActivity to use the support Action Bar. The
  * implementation uses the application class to inject dependencies.
  */
-public class DIFragmentActivity extends SherlockFragmentActivity {
+public class DIFragmentActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

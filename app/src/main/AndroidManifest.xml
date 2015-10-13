@@ -21,6 +21,9 @@
         <activity
             android:name=".activity.TvShowsActivity"
             android:label="@string/show_list_title"/>
+        <activity
+            android:name=".activity.ActivityTabs"
+            android:label="@string/show_tabs_title"/>
     </application>
 
 </manifest>

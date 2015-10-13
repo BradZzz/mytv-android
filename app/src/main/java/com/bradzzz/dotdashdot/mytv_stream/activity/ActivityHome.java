@@ -28,8 +28,15 @@ public class ActivityHome extends Activity {
         ButterKnife.inject(this);
     }
 
+    //iv_tv_tabs
+    @OnClick(R.id.iv_tv_tabs) void openTabsSampleActivity() {
+        Log.i(TAG, "Clicked Tabs!");
+        Intent intent = new Intent(this, ActivityTabs.class);
+        startActivity(intent);
+    }
+
     @OnClick(R.id.iv_tv_shows) void openTvShowsSampleActivity() {
-        Log.i(TAG, "Clicked!");
+        Log.i(TAG, "Clicked Shows!");
         Intent intent = new Intent(this, TvShowsActivity.class);
         startActivity(intent);
     }
