@@ -19,6 +19,7 @@ import android.app.Application;
 import android.content.Context;
 import android.view.LayoutInflater;
 
+import com.bradzzz.dotdashdot.mytv_stream.activity.ActivityTabs2;
 import com.bradzzz.dotdashdot.mytv_stream.activity.TvShowsActivity;
 import com.bradzzz.dotdashdot.mytv_stream.myTVPanelApplication;
 import com.bradzzz.dotdashdot.mytv_stream.renderer.TvShowRenderer;
@@ -37,7 +38,7 @@ import dagger.Provides;
 /**
  * MainModule created to provide the most important dependencies for this sample project
  */
-@Module(injects = {TvShowsActivity.class, myTVPanelApplication.class}) public class MainModule {
+@Module(injects = {ActivityTabs2.class, TvShowsActivity.class, myTVPanelApplication.class}) public class MainModule {
 
   private final Application application;
 

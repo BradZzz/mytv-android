@@ -35,6 +35,12 @@ public class ActivityHome extends Activity {
         startActivity(intent);
     }
 
+    @OnClick(R.id.iv_tv_tabs2) void openTabs2SampleActivity() {
+        Log.i(TAG, "Clicked Tabs!");
+        Intent intent = new Intent(this, ActivityTabs2.class);
+        startActivity(intent);
+    }
+
     @OnClick(R.id.iv_tv_shows) void openTvShowsSampleActivity() {
         Log.i(TAG, "Clicked Shows!");
         Intent intent = new Intent(this, TvShowsActivity.class);

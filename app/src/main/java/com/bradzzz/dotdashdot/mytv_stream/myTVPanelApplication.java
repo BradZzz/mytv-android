@@ -29,6 +29,7 @@ public class myTVPanelApplication extends Application {
 
   private ObjectGraph objectGraph;
 
+
   /**
    * Override method used to initialize the dependency container graph with the MainModule.
    */  @Override

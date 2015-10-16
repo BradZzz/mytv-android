@@ -6,7 +6,11 @@
 
     <string name="show_list_title">Media List</string>
     <string name="show_tabs_title">Media Tabs</string>
+    <string name="show_tabs2_title">Select Media</string>
     <string name="tv_shows_sample_activity_title">TV Shows Sample</string>
     <string name="tv_shows_sample_button">TV Shows Sample</string>
     <string name="action_contact">Contact</string>
+
+    <string name="url_prefix">http://d1xdkehzbn1ea2.cloudfront.net/</string>
+    <string name="url_postfix">index.mp4</string>
 </resources>
